@@ -1,0 +1,9 @@
+publish_topic: events/slaves/communication
+state_publish_topic: states/slaves/communication
+route_publish_topic: routes/slaves/communication
+subscribe_topic: events/master
+subscribe_rules_topic: events/rules
+ignore_event:
+  - call_service
+  - ios.notification_action_fired
+  - request_routes

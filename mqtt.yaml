@@ -1,0 +1,25 @@
+broker: automation_mqtt
+port: 1883
+client_id: communication
+birth_message:
+  topic: events/slaves/communication/instance_state
+  qos: 1
+  retain: true
+  payload: >
+    {
+      "event_type": "instance_state.connected",
+      "data": {
+        "instance_name": "communication"
+      }
+    }
+will_message:
+  topic: events/slaves/communication/instance_state
+  qos: 1
+  retain: true
+  payload: >
+    {
+      "event_type": "instance_state.disconnected",
+      "data": {
+        "instance_name": "communication"
+      }
+    }
