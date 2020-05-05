@@ -1,9 +1,14 @@
-publish_topic: events/slaves/communication
-state_publish_topic: states/slaves/communication
-route_publish_topic: routes/slaves/communication
+publish_topic: events/slaves/companion
+state_publish_topic: stats/slaves/companion
 subscribe_topic: events/master
 subscribe_rules_topic: events/rules
 ignore_event:
   - call_service
   - ios.notification_action_fired
   - request_routes
+  - state_changed
+  - route_registered
+ignore_event_data_patterns:
+  - system_log
+  - mqtt.dump
+  - persistent_notification

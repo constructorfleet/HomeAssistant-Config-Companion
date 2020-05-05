@@ -4,7 +4,7 @@ homeassistant:
   elevation: !secret home_elevation
   unit_system: imperial
   time_zone: !secret home_timezone
-  name: Communication
+  name: Companion
   auth_providers:
     - type: trusted_networks
       trusted_networks:
@@ -22,14 +22,11 @@ ios:
 view_event: !include view_event.yaml
 
 http:
-  base_url: https://communication.automation.home.prettybaked.com
+  base_url: https://companion.automation.home.prettybaked.com
   
 frontend:
 
 config:
-
-notify: !include_dir_list notifiers
-twilio: !include twilio.yaml
 
 mqtt: !include mqtt.yaml
 mqtteventstream: !include eventstream.yaml
