@@ -22,8 +22,10 @@ view_event: !include view_event.yaml
 
 http:
   base_url: https://automation-app.prettybaked.com
-  
+
 frontend:
+  javascript_version: auto
+  themes: !include_dir_named frontend/themes
 
 config:
 
