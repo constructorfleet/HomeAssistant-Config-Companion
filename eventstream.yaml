@@ -1,6 +1,7 @@
 publish_topic: events/slaves/companion
 subscribe_topic: events/master
 subscribe_rules_topic: events/rules
+subscribe_state_topic: states/slaves/#
 ignore_event:
   - ios.notification_action_fired
   - state_changed
