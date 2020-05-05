@@ -22,7 +22,7 @@ ios:
 view_event: !include view_event.yaml
 
 http:
-  base_url: https://companion.automation.home.prettybaked.com
+  base_url: https://automation-app.prettybaked.com
   
 frontend:
 
