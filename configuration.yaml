@@ -31,7 +31,30 @@ frontend:
   javascript_version: auto
   themes: !include_dir_named frontend/themes
 
+history:
+
+map:
+
 config:
+
+api_proxy: !include api_proxy.yaml
+
+# BEGINHACK
+# Prevents issue with servie not found for remote instance
+light:
+lock:
+climate:
+calendar:
+switch:
+cover:
+device_tracker:
+person:
+fan:
+media_player:
+alarm_control_panel:
+input_boolean:
+vacuum:
+# ENDHACK
 
 mqtt: !include mqtt.yaml
 mqtteventstream: !include eventstream.yaml
