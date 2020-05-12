@@ -9,4 +9,4 @@
 	url = https://github.com/constructorfleet/HomeAssistant-Component-ApiProxy.git
 [submodule "www/tileboard"]
 	path = www/tileboard
-	url = https://github.com/resoai/TileBoard.git
+	url = https://github.com/constructorfleet/TileBoard.git
