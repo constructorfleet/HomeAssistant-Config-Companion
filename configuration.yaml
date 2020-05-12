@@ -5,6 +5,10 @@ homeassistant:
   unit_system: imperial
   time_zone: !secret home_timezone
   name: Companion
+  whitelist_external_dirs:
+    - '/config/www/'
+    - '/config/www/cards/'
+    - '/config/www/custom_modules/'
   auth_providers:
     - type: homeassistant
     - type: command_line
