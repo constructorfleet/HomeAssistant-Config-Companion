@@ -10,6 +10,13 @@ homeassistant:
     - '/config/www/'
     - '/config/www/cards/'
     - '/config/www/custom_modules/'
+    - '/config/www/tileboard/'
+    - '/config/www/tileboard/images'
+    - '/config/www/tileboard/scripts'
+    - '/config/www/tileboard/scripts/controllers'
+    - '/config/www/tileboard/scripts/models'
+    - '/config/www/tileboard/scripts/vendors'
+    - '/config/www/tileboard/styles'
   auth_providers:
     - type: homeassistant
     - type: command_line
