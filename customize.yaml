@@ -1,0 +1,7 @@
+sensor.google_api_key:
+  hidden: true
+
+sensor.mapbox_api_key:
+  hidden: true
+
+

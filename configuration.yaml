@@ -5,6 +5,7 @@ homeassistant:
   unit_system: imperial
   time_zone: !secret home_timezone
   name: Companion
+  customize: !include customize.yaml
   whitelist_external_dirs:
     - '/config/www/'
     - '/config/www/cards/'
