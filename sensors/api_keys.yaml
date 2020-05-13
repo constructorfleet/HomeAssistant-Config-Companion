@@ -1,0 +1,9 @@
+platform: template
+sensors:
+  google_api_key:
+    friendly_name: "Google API Key"
+    value_template: !secret google_api_key
+
+  mapbox_api_key:
+    friendly_name: "Mapbox API Token"
+    value_template: !secret mapbox_api_token

@@ -38,6 +38,7 @@ map:
 config:
 
 api_proxy: !include api_proxy.yaml
+sensor: !include_dir_list sensors
 
 # BEGINHACK
 # Prevents issue with servie not found for remote instance
