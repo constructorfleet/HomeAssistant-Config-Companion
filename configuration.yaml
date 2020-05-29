@@ -37,7 +37,7 @@ http:
 
 frontend:
   javascript_version: auto
-  themes: !include_dir_named frontend/themes
+  them es: !include_dir_named frontend/themes
 
 history:
 
