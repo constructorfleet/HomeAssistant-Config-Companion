@@ -10,13 +10,6 @@ homeassistant:
     - '/config/www/'
     - '/config/www/cards/'
     - '/config/www/custom_modules/'
-    - '/config/www/tileboard/'
-    - '/config/www/tileboard/images'
-    - '/config/www/tileboard/scripts'
-    - '/config/www/tileboard/scripts/controllers'
-    - '/config/www/tileboard/scripts/models'
-    - '/config/www/tileboard/scripts/vendors'
-    - '/config/www/tileboard/styles'
   auth_providers:
     - type: homeassistant
     - type: command_line
@@ -33,7 +26,7 @@ ios:
 view_event: !include view_event.yaml
 
 http:
-  base_url: https://automation-app.prettybaked.com
+  base_url: https://automation.prettybaked.com
 
 frontend:
   javascript_version: auto
@@ -42,6 +35,12 @@ frontend:
 panel_custom: !include_dir_list custom_panels
 
 notify: !include_dir_list notifiers
+
+recorder: !include recorder.yaml
+
+influxdb: !include influx_db.yaml
+
+history:
 
 history:
 
