@@ -30,7 +30,7 @@ http:
 
 frontend:
   javascript_version: auto
-  them es: !include_dir_named frontend/themes
+  themes: !include_dir_named frontend/themes
 
 panel_custom: !include_dir_list custom_panels
 
