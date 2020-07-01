@@ -10,3 +10,4 @@ ignore_event_data_patterns:
   - system_log
   - mqtt.dump
   - persistent_notification
+  - mobile_data
