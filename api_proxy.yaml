@@ -5,3 +5,4 @@ instance_hostname_casing: LOWER
 proxy_blacklist:
   - mobile_app
   - app
+  - webhook
