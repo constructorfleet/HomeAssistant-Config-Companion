@@ -5,7 +5,6 @@ subscribe_rules_topic: events/rules
 subscribe_state_topic: states/slaves/#
 ignore_event:
   - ios.notification_action_fired
-  - state_changed
   - route_registered
 ignore_event_data_patterns:
   - system_log
